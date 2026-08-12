@@ -10,3 +10,8 @@
 @media(max-width:760px){.card-image{height:170px}}
 @media(max-width:420px){.card-image{height:220px}}
 .split-card-image{display:grid;grid-template-columns:1fr 1fr;gap:3px;background:var(--cream)}.split-card-image img{min-width:0;object-fit:cover;object-position:center}.split-card-image .tag{z-index:2}
+.float-item{border:1px solid rgba(255,255,255,.52);box-shadow:inset 0 0 24px rgba(255,255,255,.32),0 12px 35px rgba(234,78,140,.08);opacity:.14;filter:saturate(.72) blur(.35px);animation:floatDrift 13s ease-in-out infinite alternate,glassPulse 6s ease-in-out infinite}
+.float-b{animation-duration:17s,7s}.float-c{animation-duration:15s,8s}.float-d{animation-duration:18s,6.5s}.float-e{animation-duration:14s,7.5s}.float-f{animation-duration:20s,9s;opacity:.08}
+@keyframes glassPulse{0%,100%{filter:saturate(.72) blur(.35px) brightness(1);box-shadow:inset 0 0 24px rgba(255,255,255,.25),0 12px 35px rgba(234,78,140,.06)}50%{filter:saturate(.9) blur(.2px) brightness(1.08);box-shadow:inset 0 0 34px rgba(255,255,255,.48),0 18px 42px rgba(234,78,140,.12)}}
+.hero-main,.hero-small{border:1px solid rgba(255,255,255,.55);box-shadow:inset 0 0 22px rgba(255,255,255,.22),var(--shadow)}
+@media(prefers-reduced-motion:reduce){.float-item{animation:none}.hero-main,.hero-small{transition:none}}
