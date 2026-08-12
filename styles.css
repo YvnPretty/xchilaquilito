@@ -9,3 +9,4 @@
 .card-image img{object-position:center center}
 @media(max-width:760px){.card-image{height:170px}}
 @media(max-width:420px){.card-image{height:220px}}
+.split-card-image{display:grid;grid-template-columns:1fr 1fr;gap:3px;background:var(--cream)}.split-card-image img{min-width:0;object-fit:cover;object-position:center}.split-card-image .tag{z-index:2}
